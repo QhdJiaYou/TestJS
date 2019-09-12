@@ -95,23 +95,27 @@ function count(num){
     return res;
 }
 
-let ay = [1,2,'2',3,3,4,5];
-console.log(ay.length);
-function  unique(arr) {
-    let hash = {};   //JS对象的底层是基于哈希表存储的
-    let res = [];
-    for(let i=0; i<arr.length; i++){
-        let temp = arr[i], key;
-        if(typeof temp === 'object'){
-            key = JSON.stringify(temp);
-        }else {
-            key = typeof temp + temp;  //确保值相同，类型不同时的情况
-        }
-        if(!hash[key]){      //作为对象的键值，会默认的将key都转换成字符串
-            hash[key] = true;
-            res.push(temp);
+function findNUM(arr, num) {
+    if(num === null || !Number.isInteger(num)) {
+        return;
+    }
+    while(arr.length) {
+        const flag = arr[arr.length-1][0];
+        if(flag === num) {
+            return true;
+        } else if(flag > num) {
+            if(arr.length === 1) return false;
+            arr.pop();
+        } else {
+            if(arr[0].length === 1) {
+                return false;
+            } else {
+                for(let i=0; i<arr.length; i++) {
+                    arr[i].shift();
+                }
+            }
         }
     }
-    return res;
+    return false;
 }
-console.log(unique(ay));
+console.log(findNUM(arr,14));

@@ -4,7 +4,11 @@
     <bookmark url="file://$PROJECT_DIR$/public/javascripts/OOP.js" line="56" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="116d4167-d0f3-4442-83e0-cb741e4cf95e" name="Default" comment="" />
+    <list default="true" id="116d4167-d0f3-4442-83e0-cb741e4cf95e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/Alg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/Alg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/test.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,14 +35,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/thousands.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="24" column="51" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="51" />
+            <state relative-caret-position="-240">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/Alg.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="184" column="30" selection-start-line="184" selection-start-column="30" selection-end-line="184" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/bishi.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="139" column="17" lean-forward="true" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/offerAlg.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="635" lean-forward="true" selection-start-line="635" selection-end-line="635" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="261" column="41" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/Tree.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -57,6 +106,8 @@
     <findStrings>
       <find>values</find>
       <find>千分位</find>
+      <find>b</find>
+      <find>console</find>
     </findStrings>
     <replaceStrings>
       <replace>i</replace>
@@ -83,36 +134,37 @@
         <option value="$PROJECT_DIR$/public/javascripts/Genera.js" />
         <option value="$PROJECT_DIR$/public/javascripts/collect.js" />
         <option value="$PROJECT_DIR$/public/javascripts/StrProcess.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/offerAlg.js" />
         <option value="$PROJECT_DIR$/public/javascripts/dataStructure.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/offerAlg.js" />
         <option value="$PROJECT_DIR$/public/javascripts/Stack.js" />
         <option value="$PROJECT_DIR$/public/javascripts/StrProcess.js" />
         <option value="$PROJECT_DIR$/public/javascripts/testDataType.js" />
         <option value="$PROJECT_DIR$/public/javascripts/Link.js" />
         <option value="$PROJECT_DIR$/public/javascripts/Tree.js" />
         <option value="$PROJECT_DIR$/public/javascripts/StrProcess.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/offerAlg.js" />
         <option value="$PROJECT_DIR$/public/javascripts/meituan.js" />
         <option value="$PROJECT_DIR$/public/javascripts/meituan.js" />
         <option value="$PROJECT_DIR$/public/javascripts/meituan.js" />
         <option value="$PROJECT_DIR$/public/javascripts/meituan.js" />
         <option value="$PROJECT_DIR$/public/javascripts/graphic.js" />
         <option value="$PROJECT_DIR$/public/javascripts/graph.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/arrayPro.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/arrayPro.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/arrAlg.js" />
         <option value="$PROJECT_DIR$/public/javascripts/thousands.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/arrayPro.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/arrayPro.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/arrAlg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/bishi.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/offerAlg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/offerAlg.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/offerAlg.js" />
       </list>
     </option>
   </component>
@@ -122,11 +174,11 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1529" />
-    <option name="y" value="196" />
-    <option name="width" value="1440" />
-    <option name="height" value="798" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="314" />
+    <option name="y" value="-1051" />
+    <option name="width" value="1398" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -156,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,14 +231,16 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="8.12.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -209,7 +262,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.thousands.js">
+  <component name="RunManager" selected="Node.js.offerAlg.js">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -229,19 +282,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Alg.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Alg.js" working-dir="$PROJECT_DIR$/public/javascripts">
+    <configuration name="Destructurction.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Destructurction.js" working-dir="$PROJECT_DIR$/public/javascripts">
       <method v="2" />
     </configuration>
     <configuration name="arrAlg.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="arrAlg.js" working-dir="$PROJECT_DIR$/public/javascripts">
       <method v="2" />
     </configuration>
-    <configuration name="arrayPro.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="arrayPro.js" working-dir="$PROJECT_DIR$/public/javascripts">
+    <configuration name="bishi.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="bishi.js" working-dir="$PROJECT_DIR$/public/javascripts">
+      <method v="2" />
+    </configuration>
+    <configuration name="offerAlg.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="offerAlg.js" working-dir="$PROJECT_DIR$/public/javascripts">
       <method v="2" />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/public/javascripts">
-      <method v="2" />
-    </configuration>
-    <configuration name="thousands.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="thousands.js" working-dir="$PROJECT_DIR$/public/javascripts">
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -275,19 +328,19 @@
     <list>
       <item itemvalue="Node.js.bin\www" />
       <item itemvalue="Node.js.test.js" />
-      <item itemvalue="Node.js.Alg.js" />
-      <item itemvalue="Node.js.arrayPro.js" />
+      <item itemvalue="Node.js.bishi.js" />
       <item itemvalue="Node.js.arrAlg.js" />
-      <item itemvalue="Node.js.thousands.js" />
+      <item itemvalue="Node.js.offerAlg.js" />
+      <item itemvalue="Node.js.Destructurction.js" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.thousands.js" />
-        <item itemvalue="Node.js.arrAlg.js" />
-        <item itemvalue="Node.js.arrayPro.js" />
-        <item itemvalue="Node.js.Alg.js" />
+        <item itemvalue="Node.js.offerAlg.js" />
         <item itemvalue="Node.js.test.js" />
+        <item itemvalue="Node.js.bishi.js" />
+        <item itemvalue="Node.js.Destructurction.js" />
+        <item itemvalue="Node.js.arrAlg.js" />
       </list>
     </recent_temporary>
   </component>
@@ -343,17 +396,33 @@
       <workItem from="1558688725481" duration="595000" />
       <workItem from="1563376604401" duration="292000" />
       <workItem from="1563520244371" duration="6632000" />
-      <workItem from="1563763590773" duration="638000" />
+      <workItem from="1563763590773" duration="2061000" />
+      <workItem from="1564125340981" duration="520000" />
+      <workItem from="1564368076174" duration="11753000" />
+      <workItem from="1564734511407" duration="4011000" />
+      <workItem from="1564973099194" duration="6758000" />
+      <workItem from="1565074905306" duration="1272000" />
+      <workItem from="1565160077296" duration="876000" />
+      <workItem from="1565236319116" duration="5000" />
+      <workItem from="1565789198332" duration="2521000" />
+      <workItem from="1566358063694" duration="2461000" />
+      <workItem from="1566527764801" duration="943000" />
+      <workItem from="1566910497175" duration="31656000" />
+      <workItem from="1567130828712" duration="1865000" />
+      <workItem from="1567413789236" duration="14147000" />
+      <workItem from="1567908686265" duration="7730000" />
+      <workItem from="1567994162931" duration="6935000" />
+      <workItem from="1568012832987" duration="36706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388888000" />
+    <option name="totallyTimeSpent" value="520470000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1529" y="196" width="1440" height="798" extended-state="0" />
+    <frame x="-7" y="-1087" width="1431" height="772" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5879121" visible="true" weight="0.2274678" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5879121" visible="true" weight="0.1528288" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -363,13 +432,13 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49568033" weight="0.38101983" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34035656" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4952241" weight="0.273906" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31118315" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50431967" side_tool="true" weight="0.2564706" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.29886687" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5047759" side_tool="true" weight="0.3987034" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3306321" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -416,13 +485,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/first.html" />
-    <entry file="file://$PROJECT_DIR$/public/javascripts/OOP.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-640">
-          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/inherit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-998">
@@ -430,18 +492,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2286">
-          <folding />
-        </state>
+        <state relative-caret-position="-2286" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/error.jade">
@@ -472,20 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/Destructurction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-528">
-          <caret line="2" column="14" lean-forward="true" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/Stack.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-24">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/collect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -500,24 +539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/Genera.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3624">
           <caret line="151" column="6" selection-start-line="151" selection-start-column="6" selection-end-line="151" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/Tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -528,51 +553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/testDataType.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/arrAlg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/Alg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7260">
-          <caret line="330" column="34" selection-start-line="330" selection-start-column="34" selection-end-line="330" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="109" column="23" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/offerAlg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3586">
-          <caret line="417" column="5" selection-start-line="417" selection-start-column="5" selection-end-line="417" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/arrayPro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="100" column="21" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/strAlg.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1157">
@@ -580,13 +560,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/thousands.js">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="51" />
+        <state relative-caret-position="900">
+          <caret line="1240" column="19" selection-start-line="1240" selection-start-column="19" selection-end-line="1240" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/testDataType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Destructurction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1121">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3120">
+          <caret line="130" column="30" selection-start-line="130" selection-start-column="30" selection-end-line="130" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Stack.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/OOP.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1752">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/arrAlg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="96" column="41" selection-start-line="96" selection-start-column="37" selection-end-line="96" selection-end-column="41" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/arrayPro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2616">
+          <caret line="110" column="29" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/thousands.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-240">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="39" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/bishi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="139" column="17" lean-forward="true" selection-start-line="139" selection-start-column="17" selection-end-line="139" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="261" column="41" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Alg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="184" column="30" selection-start-line="184" selection-start-column="30" selection-end-line="184" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/offerAlg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="635" lean-forward="true" selection-start-line="635" selection-end-line="635" />
         </state>
       </provider>
     </entry>
@@ -648,7 +725,6 @@
             <option name="proportions">
               <list>
                 <option value="0.34322453" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

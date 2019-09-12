@@ -31,6 +31,7 @@ console.log([...f(s)]);
 //方法3(ES6)
 //s.flat(2);
 //方法4
+console.log(s.join(','));
 console.log(s.join(',').split(',').map(value=> parseInt(value)));
 //方法5,concat是深度拷贝，参数可以是值也可以是数组，返回的新数组中添加的都是值
 const flatten = function (arr) {
@@ -59,7 +60,7 @@ console.log(isNaN(null));
 
 //生成指定位数的随机字符串
 //toString()的参数可以是2~36之间的任意整数，表示进制，默认不写就是10（十进制）
-console.log(String(Math.random()).substr(2,4));
+console.log('输出',String(Math.random()).substr(2,4));
 console.log(String.fromCharCode(97));
 function random(num){
     let res ='';
@@ -75,6 +76,7 @@ function random(num){
 console.log(random(9));
 
 //字符串中str.charAt(i)和str[i]下标的方式只能访问值，不能修改值
+//字符串本来就是只读的值类型变量
 let ss = 'fegt';
 console.log(ss.charAt(0) === 'f');
 ss[1] = ss[2];

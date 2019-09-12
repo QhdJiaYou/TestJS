@@ -1,9 +1,61 @@
 //数组去重
+let a = [1,2,2,3,3];
+let ay = [1,2,'2',3,3,4,5];
+//(1)利用set集合的特性
 let unique = function(arr){
     return Array.from(new Set(arr));
+};
+//(2) 创建一个新的数组保存不重复的元素
+function removeDuplicate(arr) {
+    let res = [];
+    for (let i=0; i<arr.length; i++) {
+        if (!res.includes(arr[i])) {
+            res.push(arr[i]);
+        }
+    }
+    return res;
 }
-let a = [1,2,2,3];
-console.log(unique(a));
+console.log(unique(ay));
+//(3)使用hash表存储已有的元素，是最快的，用空间换时间
+function uniqueArr(arr) {
+    let hash = {};   //JS对象的底层是基于哈希表存储的
+    let res = [];
+    for(let i=0; i<arr.length; i++){
+        let temp = arr[i], key;
+        if(typeof temp === 'object'){
+            key = JSON.stringify(temp);
+        }else {
+            key = typeof temp + temp;  //确保值相同，类型不同时的情况
+        }
+        if(!hash[key]){      //作为对象的键值，会默认的将key都转换成字符串
+            hash[key] = true;
+            res.push(temp);
+        }
+    }
+    return res;
+}
+console.log(uniqueArr(ay));
+//(4)利用indexOf判断数组元素第一次出现的位置是否是当前位置
+function uniqueFour(arr) {
+    let res = [];
+    for(let i=0; i<arr.length; i++) {
+        if(arr.indexOf(arr[i]) === i){
+            res.push(arr[i]);
+        }
+    }
+    return res;
+}
+//(5)先排序后去重
+function  uniqueFive(arr) {
+    arr.sort((a,b) => a-b);
+    let res = [arr[0]];
+    for(let i=1; i<arr.length; i++){
+        if(arr[i] !== arr[i-1]) {
+            res.push(arr[i]);
+        }
+    }
+    return res;
+}
 //字符串反转
 var str = '12345';
 //将map方法通过call应用到str对象

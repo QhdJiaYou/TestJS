@@ -14,7 +14,7 @@ function duplicate(arr){
     return -1;
 }
 //3.1找出数组中重复的数(方法二)，时间复杂度O(n),空间O(1)
-//利用数字值的大小不会超过数组下标的最大值
+//利用数字值的大小不会超过数组下标的最大值，前提是长度为n的数组里所有的数字都在0到n-1的范围内
 function duplicateTwo(arr){
     if(arr === undefined || !Array.isArray(arr)){
         return -1;
@@ -140,7 +140,22 @@ function printListFromTailToHead(head) {
     return arr.reverse();
 }
 console.log(printListFromTailToHead(list));
-
+//返回值是一个反转的链表
+function printListFromTailToHead1(head) {
+    if(head == null) {
+        return null;
+    }
+    let pre = null;
+    let next = null;
+    let cur = head;
+    while(cur != null){
+        next = cur.next;
+        cur.next = pre;
+        pre = cur;
+        cur = next;
+    }
+    return pre;
+}
 //输入某二叉树的前序遍历和中序遍历结果，请重建出该二叉树
 function TreeNode(x) {
     this.value = x;
@@ -197,27 +212,27 @@ function WFSZigzag(tree) {
     }
     let res = [];
     let queue = [];
+    let layer = 0;
     queue.push(tree);
     while(queue.length){
         let level = queue.length;
-        let layer = 0;
         let curLevel = [];          //用来分层遍历
         for(let i=0;i < level;i++){
             let curNode = queue.shift();
             curLevel.push(curNode.value);
             curNode.left? queue.push(curNode.left) : '';    //先push左边的
             curNode.right? queue.push(curNode.right) : '';
-            layer++;
         }
-        if(layer%2 !== 0){
+        layer++;
+        if(layer%2 !== 0){//奇数层
             res.push(curLevel);
-        }else{
+        }else{//偶数层
             res.push(curLevel.reverse());
         }
     }
     return res;
 }
-console.log(WFSZigzag(tree));   //之字形打印
+console.log('分层实现之字形打印',WFSZigzag(tree));   //之字形打印
 //用两个栈隔行存储也能实现之字形打印
 function WFSZigzag2(tree) {
     if (tree === null || !tree instanceof TreeNode) {
@@ -286,21 +301,21 @@ function DFS(tree) {
     return res;
 }
 console.log(DFS(tree));
-//面试题8：二叉树的下一个节点
+//面试题8：求二叉树的中序遍历的下一个节点
 function nextValue(tree,node){
     if(tree === null || node === null)
         return null;
-    if(node.right !== null){
+    if(node.right !== null){//如果它有右子树，那么下一个节点就是它右子树中最左子节点
         let nRight = node.right;
         while(nRight && nRight.left !== null){
             nRight = nRight.left;
         }
         return nRight;
-    }else{
-        if(node.parent.left === node){
+    }else{  //它没有右子树
+        if(node.parent.left === node){  //如果他是它父亲节点的左孩子
             return node.parent;
-        }else{
-            while(node.parent && node.parent.right === node){
+        }else{      //如果他是它父亲节点的右孩子
+            while(node.parent && node.parent.right === node){//就找一个祖先是祖先父亲节点的左孩子时
                 node = node.parent;
             }
             if(node.parent === null){
@@ -369,7 +384,7 @@ function Min(str){
         if(str[pre] === str[rear] && str[mid] === str[pre]) { //当pre和rear对应的值相同，且中间值mid也跟他们相同时
             let res = str[pre];
             for (let i = pre + 1; i <= rear; i++) {
-                if (str[i] < res)
+                if (str[i] < res)  //找到第一个较小值一定是最小值
                     return str[i];
             }
         }
@@ -388,7 +403,7 @@ function Min(str){
 let arry = [1,1,0,1,1];
 console.log(Min(arry));
 //面试题12：矩阵中的路径(回溯法的经典应用)
-let pathLength = 0;
+var pathLength = 0;
 function within(arr,i,j) {
     return i>=0&&i<arr.length&&j>=0&&j<arr[0].length;
 }
@@ -428,5 +443,193 @@ function hasPath(arr,str) {
 let Binary = [['a','c','j'],['b','f','d'],['t','c','e'],['g','s','h']];
 console.log(hasPath(Binary,'abfb'));
 
-//面试题
+//面试题38,输出字符串的全排列
+function permutation(str) {
+    if(!str || str.length === 0){
+        return [];
+    }
+    var result = [];
+    var temp = '';
+    var tempArr = str.split('');
+    ordering(tempArr);
+    function ordering(tempArr){
+        if(tempArr.length === 0){
+            result.push(temp);
+            return;
+        }
+        for(let i=0; i<tempArr.length; i++) {
+            temp += tempArr[i];
+            let nextArr = tempArr.concat();
+            nextArr.splice(i,1);
+            ordering(nextArr);
+            temp = temp.substring(0,temp.length-1);  //回溯
+        }
+    }
+    result = result.filter((val, index, arr) => {  //去重
+        return arr.indexOf(val) === index;
+    });
+    return result;
+}
+
+console.log(permutation('aabc'));
+
+//将数字转码成字符，列出所有情况
+function fromNumtoLetter(numStr) {
+    if(!numStr || numStr.length === 0){
+        return [];
+    }
+    var result = [];
+    var temp = '';
+    var tempArr = numStr.split('').map(val => parseInt(val));
+    deCode(tempArr, 0);
+    function deCode(tempArr, start) {
+
+        if(tempArr.length === start){
+            result.push(temp);
+            return;
+        }
+
+        temp += String.fromCharCode(tempArr[start] + 64);
+        deCode(tempArr, start + 1);
+        temp = temp.substring(0, temp.length - 1);
+
+        if(start <= tempArr.length - 2) {
+            if(tempArr[start] === 1 && tempArr[start+1] >=0 && tempArr[start+1] <=9) {
+                temp += String.fromCharCode(Number('' + tempArr[start] + tempArr[start+1]) + 64);
+                deCode(tempArr, start+2);
+                temp = temp.substring(0, temp.length - 1);
+            }else if(tempArr[start] === 2 && tempArr[start+1] >=0 && tempArr[start+1] <=6) {
+                temp += String.fromCharCode(Number(''+ tempArr[start] + tempArr[start+1]) + 64);
+                deCode(tempArr, start+2);
+                temp = temp.substring(0, temp.length - 1);
+            }
+        }
+    }
+    return result;
+}
+
+console.log(fromNumtoLetter('112278'));
+
+//求出所有字母组合情况，如果输入n个字符，则能构成长度为1,2...n的组合
+function composeLetter(arr) {
+    if(!arr || arr.length === 0){
+        return [];
+    }
+    var res = [];
+    var temp = '';
+    for(let m=1; m <= arr.length; m++){
+        combine(arr,m);  //每次求n个字符中长度为m的组合
+    }
+    function combine(arr, m) { //可分成两个递归子任务
+        if(m === 0){
+            res.push(temp);
+            return;
+        }
+        if(arr.length > 0){
+            temp += arr[0];
+            let next = arr.concat();
+            next.splice(0,1);
+            combine(next, m-1);  //长度为m的组合中包括第一个字符
+            temp = temp.substring(0, temp.length - 1);
+            combine(next, m);   //长度为m的组合中不包括第一个字符
+        }
+    }
+    return res;
+}
+
+// console.log(composeLetter(['a','b','c','d']));
+
+//面试题14:剪绳子
+// （动态规划）
+function maxProductAfterCutting(len){
+    let max = 1;
+    let products = [];
+    if(len < 2)
+        return 0;
+    if(len === 2)
+        return 1;
+    if(len === 3)
+        return 2;
+
+    products[0] = 0;
+    products[1] = 1;
+    products[2] = 2;
+    products[3] = 3;
+    //只有以上情况，作为绳子的一部分时，不剪比剪开好
+    for(let i=4; i<=len; i++){
+        max = 0;
+        for(let j=1; j<=Math.floor(i/2); j++){
+            let temp = products[j] * products[i-j];
+            if(temp > max){
+                max = temp;
+            }
+        }
+        if(max > i){
+            products[i] = max;
+        } else {
+            products[i] = i;
+        }
+
+    }
+    return products[len];
+}
+// 贪心算法
+function maxProductAfterCutting1(len) {
+    if(len<2) return 0;
+    if(len === 2) return 1;
+    if(len === 3) return 2;
+
+    let timeOf3 = Math.floor(len/3);
+    let timeOf2 = 0;
+    if(len % 3 === 1){
+        timeOf3 -= 1;
+        timeOf2 = 2;
+    }
+    if(len % 3 === 2){
+        timeOf2 = 1;
+    }
+    return Math.pow(3,timeOf3) * Math.pow(2,timeOf2);
+}
+
+console.log(maxProductAfterCutting1(7));
+
+//面试题51：数组中的逆序对(归并排序解决，用空间换时间)
+function inversePairs(arr){
+    let count = 0;
+    split(arr);
+    function split(arr) {
+        let len = arr.length;
+        if(!arr || len === 0)
+            return [];
+        if(len === 1)
+            return arr;
+        let middle = Math.floor(len/2);
+        let left = arr.slice(0,middle);
+        let right = arr.slice(middle);
+        return merge(split(left), split(right));
+    }
+    function merge(left,right) {
+        let res = [];
+        let p1 = left.length - 1;
+        let p2 = right.length - 1;
+        while(p1>=0 && p2>=0){
+            if(left[p1] <= right[p2]){
+                res.push(right[p2]);
+                p2--;
+            } else {
+                res.push(left[p1]);
+                p1--;
+                count += p2 + 1;
+            }
+        }
+        res.reverse();
+        if(p1>=0)
+            res = left.slice(0,p1 + 1).concat(res);
+        if(p2>=0)
+            res = right.slice(0,p2 + 1).concat(res);
+        return res;
+    }
+    return count;
+}
+console.log(inversePairs([7,5,6,4]));
 
