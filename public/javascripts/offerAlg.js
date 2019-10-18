@@ -13,6 +13,21 @@ function duplicate(arr){
     }
     return -1;
 }
+function dupf(arr) {
+    if(!arr || !Array.isArray(arr)){
+        return -1;
+    }
+    let len = arr.length;
+    let hash = {};
+    for(let i=0; i<len; i++){
+        if(!hash[arr[i]]){
+            hash[arr[i]] = true;
+        } else{
+            return arr[i];
+        }
+    }
+    return -1;
+}
 //3.1找出数组中重复的数(方法二)，时间复杂度O(n),空间O(1)
 //利用数字值的大小不会超过数组下标的最大值，前提是长度为n的数组里所有的数字都在0到n-1的范围内
 function duplicateTwo(arr){
@@ -32,10 +47,11 @@ function duplicateTwo(arr){
     return -1;
 }
 arrr =[2,3,1,4,2,5,3];
-console.log('找出重复元素1',duplicate(arrr));
+console.log('找出重复元素1',dupf(arrr));
 console.log('找出重复元素2',duplicateTwo(arrr));
 
 //3.2 不修改数组找出重复的数字,用时间换空间，时间复杂度是O(nlogn)，空间O(1)
+//利用数字值的大小不会超过数组下标的最大值，前提是长度为n的数组里所有的数字都在0到n-1的范围内
 function getDuplicate(arr) {
     if(arr === undefined || !Array.isArray(arr)){
         return -1;
@@ -76,13 +92,13 @@ function findInTwo(arr,target) {
         return -1;
     while (arr.length){
         let i = arr.length-1;
-        let j = 0;
+        let j = 0;  //从右上角开始比较
         if(target > arr[i][j]){
             for(let k = 0;k < arr.length;k++){
-                arr[k].shift();
+                arr[k].shift();   //去掉一行
             }
         }else if(target < arr[i][j]){
-            arr.pop();
+            arr.pop();   //去掉一列
         }else if(target === arr[i][j]){
             return true;
         }
@@ -536,8 +552,29 @@ function composeLetter(arr) {
     }
     return res;
 }
-
-// console.log(composeLetter(['a','b','c','d']));
+function composeLetter1(arr) {
+    if(!arr || arr.length === 0){
+        return [];
+    }
+    var res = [];
+    var temp = '';
+    for(let i=0; i< arr.length; i++){
+        temp += arr[i];
+        res.push(temp);
+        for(let j = i+1; j<arr.length; j++){
+            temp += arr[j];
+            res.push(temp);
+        }
+        temp = '';
+    }
+    return res;
+}
+total = composeLetter1([1,3,2,4]);
+let [a,b] = [3,2];
+total = total.filter(val=> !(val.includes(a)&&val.includes(b)));
+let [c,d] = [2,4];
+total = total.filter(val=> !(val.includes(c)&&val.includes(d)));
+console.log('dehhiohdgy',total);
 
 //面试题14:剪绳子
 // （动态规划）
@@ -632,4 +669,130 @@ function inversePairs(arr){
     return count;
 }
 console.log(inversePairs([7,5,6,4]));
+//求未排序数组中累加和为给定值的最长子数组长度
+//思路：用sum[j]记录从0到j的累加和，那么以位置j结尾的满足累加和为K的最长子序列的开头就应该是从0开始第一次出现累加和为sum[j]-K的位置i
+function maxLength(arr,key) {
+    if(!arr || arr.length === 0){
+        return 0;
+    }
+    let map = new Map();  //用map记录累加和为key,第一次出现该累加和的位置i
+    let sum = 0;
+    let res = 0;
+    map.set(0,-1);
+    for(let i=0; i<arr.length; i++){
+        sum += arr[i];
+        let temp = map.get(sum-key);
+        if(temp){
+            let dist = i - temp;
+            res = dist > res ? dist: res;
+        }
+        if(!map.get(sum)){
+            map.set(sum,i);
+        }
+    }
+    return res;
+}
+console.log(maxLength([3,-2,-4,0,6],3));
+//求未排序数组中累加和小于或等于给定值key的最长子数组长度
+function maxLengthDayu(arr, key) {
+    if(!arr || arr.length === 0){
+        return 0;
+    }
+    let res = 0;
+    let sum = 0;
+    let h = [];  //数组记录某一位之前的最大累加和，不算自己本身
+    h[0] = sum;
+    for(let i=0; i<arr.length; i++){
+        sum += arr[i];
+        h[i+1] = Math.max(sum, h[i]);
+    }
+    sum = 0;
+    for(let j=0; j<arr.length; j++){
+        sum += arr[j];
+        let index = j - findIndex(h,sum - key) + 1;
+        res = index > res? index: res;
+    }
+    return res;
+    function findIndex(array,val) {  //在阶梯递增的数组array中找到第一次大于或者等于val的值
+        let left = 0;                //递增阶梯数组形如：[1,3,3,3,5,5,5,6,6,7]这样
+        let right = array.length - 1;
+        let res;
+        while (left<=right){
+            let mid = Math.floor((left + right)/2);
+            if(array[mid]>=val){
+                res = mid;
+                right = mid - 1;
+            } else{
+                left = mid + 1;
+            }
+        }
+        return res;
+    }
+}
 
+console.log(maxLengthDayu([3,-2,-4,0,6], -2));
+
+//在旋转数组中用二分法查找值
+function isInverseArr(arr,val) {
+    if(!arr || arr.length === 0){
+        return -1;
+    }
+    let len = arr.length;
+    let start = 0;
+    let end = len - 1;
+    let mid = 0;
+    while(start < end) {
+        mid = Math.floor((start + end)/2);
+        let middle = arr[mid];
+        let enddle = arr[end];
+        let startle = arr[start];
+        if(middle === val) return mid;
+        if(middle < enddle){  //mid在右边有序数组中
+            if(middle > val){  //val存在右边序列中
+                end = mid - 1;
+            }
+            if(middle < val){   //val有可能在后面，也有可能在前面
+                if(enddle > val) start = mid + 1;
+                if(enddle < val) end = mid - 1;
+                if(enddle === val) return end;
+            }
+        } else if(middle > enddle){
+            if(middle < val){
+                start = start + 1;
+            }
+            if(middle > val){
+                if(startle < val) end = mid - 1;
+                if(startle > val) start = start + 1;
+                if(startle === val) return start;
+            }
+        } else if(middle === enddle){
+            end = mid - 1;
+        } else if(startle === enddle){
+            if(arr[mid] < val) start = mid + 1;
+            if(arr[mid] > val) end = mid - 1;
+            if(arr[mid] === val) return  mid;
+        }
+    }
+    if(start === end){
+        if(val !== arr[start]){
+            return -1;
+        }
+        return start;
+    }
+}
+//给定n个整数，找出平均数最大且长度为k的子数组，输出最大的平均数
+function findMaxAverage(k, arr) {
+   let sum = 0;
+   for(let i=0; i<k; i++){
+       sum += arr[i];
+   }
+   let res = sum;
+   for(let i=k; i<arr.length; i++){
+       sum -= arr[i-k];
+       sum += arr[i];
+       if(sum > res) res = sum;
+   }
+   return (res/k).toFixed(3);
+}
+
+console.log(findMaxAverage(4,[4,5,6,1,2,3]));

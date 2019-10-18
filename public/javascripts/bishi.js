@@ -47,8 +47,9 @@ function find(obj, s) {
         return -1;
     }
 }
-//console.log( parse(object,'f'));
+console.log( parse(object,'b.c'));
 
+//打印指定行数的金字塔
 function print(rowCount) {
     let p = '';
     let res = new Array(rowCount);
@@ -74,7 +75,7 @@ function print(rowCount) {
 
 //console.log(' '.repeat(4) + '34');
 //console.log(print(6));
-
+//获取url中的参数
 function getUrlParam1(sUrl, sKey) {
     let s = sUrl.split(/\?|#/g);
     let p = '';
@@ -129,8 +130,8 @@ function getUrlParam(sUrl,sKey) {
 }
 
 let http = 'http://www.nowcoder.com?key=1&key=2&key=gygg&test=4#hehe';
-//console.log(getUrlParam(http, 'key'));
-//console.log(void 0);
+console.log(getUrlParam(http, 'key'));
+console.log(void 0);
 
 var _input = ['0 0 2 4','0 2 2 2','0 4 2 2','8 8 2 2'];
 function solution(input) {
@@ -161,3 +162,68 @@ function solution(input) {
     return res;
 }
 console.log(solution(_input));
+
+function quickSort(arr){
+    if(!arr)
+        return;
+    let len = arr.length;
+    if(len < 2){
+        return arr;
+    }
+    let flag = arr[0];
+    let right = [];
+    let left = [];
+    for(let i=1; i<len; i++){
+        if(arr[i] > flag){
+            right.push(arr[i]);
+        } else {
+            left.push(arr[i]);
+        }
+    }
+    return quickSort(left).concat(flag, quickSort(right));
+}
+
+console.log(quickSort([2,4,1,5,6,6]));
+
+let strrr = 'js123ldka78sdassdfd653';
+
+function getNumbers(str){
+    let res = [];
+    let reg = /\d+/g;
+    str.replace(reg, function (a) {
+        res.push(Number(a));
+    });
+    return res;
+}
+console.log(getNumbers(strrr));
+//去重
+function uniqueArr(arr){
+    return arr.reduce((pre,cur) => pre.includes(cur)? pre : [...pre, cur], []);
+}
+//平铺
+function flatArr(arr){
+    return arr.reduce((pre,cur) => pre.concat(Array.isArray(cur)? flatArr(cur): cur), []);
+}
+//排序
+function quicksort(arr){
+    if(!arr) return;
+    if(arr.length < 2) return;
+    let flag = arr[0];
+    let right = [];
+    let left = [];
+    for(let i=1; i<arr.length; i++){
+        if(arr[i]<flag){
+            left.push(arr[i]);
+        }else{
+            right.push(arr[i]);
+        }
+    }
+    return quickSort(left).concat(flag, quickSort(right));
+}
+
+let arrayunique = [1,3,4,6,4,5,NaN,NaN,{},{}];
+console.log(uniqueArr(arrayunique));
+let ar =  [[4],[[4,5]],[1,2]];
+console.log(quicksort(flatArr(ar)));
+let resarr = ar.join(',').split(',').map(val => parseInt(val));
+console.log(resarr);

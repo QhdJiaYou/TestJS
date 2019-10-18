@@ -59,9 +59,10 @@ function  uniqueFive(arr) {
 //字符串反转
 var str = '12345';
 //将map方法通过call应用到str对象
-Array.prototype.map.call(str, function(x) {   //call是Function的原生方法，map是Array的方法
+let mstr = Array.prototype.map.call(str, function(x) {   //call是Function的原生方法，map是Array的方法
     return x;
 }).reverse().join('');
+console.log(mstr);
 //判断回文
 function checkPalindrom(str){
     return str === str.split('').reverse().join('');
@@ -176,7 +177,7 @@ function shellSort(arr){
 //归并排序（稳定），是采用分治法的经典应用，时间复杂度O(nlogn),用空间换时间,空间复杂度O(n)
 //最后每个子问题的时间规模为常数c，共有n个
 function mergeSort(arr) {   //分割数组
-    if(arr === undefined || arr === null) return;
+    if(!arr) return;
     let len = arr.length;
     if(len < 2) return arr;
     let middle = Math.floor(len/2);
@@ -200,7 +201,7 @@ function merge(left,right) {  //合并数组
         res.push(right.shift());
     return res;
 }
-//快速排序(不稳定)，时间复杂度O(nlogn),空间复杂度O(nlogn)
+//快速排序(不稳定)，时间复杂度O(nlogn),空间复杂度O(1)，修改原数组
 function quickSort(arr,left,right) {
     if(arr === undefined || arr === null) return;
     let len = arr.length;
@@ -216,7 +217,7 @@ function quickSort(arr,left,right) {
 }
 function partition(arr,left,right) {
     let i,j,temp;
-    i = left;
+    i = left+1;
     j = right;
     while(i<j){
         while(arr[j]>arr[left]) j--;  //以最左边的数为标杆，每次都是右边的j哨兵先移动
@@ -225,7 +226,7 @@ function partition(arr,left,right) {
             temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
-            j--;        //交换后j先移动
+            j--;        //交换后j先移动,如果本次循环i和j相邻，防止下一次循环i>j，错过了相等的情况
         }
     }
     if(i===j){
@@ -235,9 +236,30 @@ function partition(arr,left,right) {
     }
     return i;
 }
-console.log('快排结果', quickSort([6,6,2,7,3,4,5]));
+console.log('快排结果', quickSort([2,3,1,4,7,8,5]));
 //堆排序（不稳定），时间复杂度O(nlogn)
-var len;   // 因为声明的多个函数都需要数据长度，所以把len设置成为全局变量
+//快排，不修改原数组
+function quickSort1(arr) {
+    if(!arr)
+        return;
+    let len = arr.length;
+    if(len < 2){
+        return arr;
+    }
+    let flag = arr[0];
+    let left = [];
+    let right = [];
+    for(let i=1; i<len; i++){
+        if(arr[i]>flag){
+            right.push(arr[i]);
+        } else{
+            left.push(arr[i]);
+        }
+    }
+    return quickSort1(left).concat(flag, quickSort1(right));
+}
+console.log(quickSort1([2,3,1,4,7,6,8]));
+
 function heapSort(arr) {
     if(arr === undefined || arr === null) return;
     len = arr.length;
@@ -246,7 +268,7 @@ function heapSort(arr) {
     for(let i =0 ; i < arr.length - 1; i++){  //交换n-1次就可以了，最后一个自动就确定了
         swap(arr,0,len-1);    //交换根节点与最后一个叶节点
         len--;   //数组的长度减1，已经确定有序的节点不需要再次验证
-        heapify(arr,0);    //从被交换的根节点向下验证，此时只有被交换的节点的子树受到影响
+        heapify(arr,0,len);    //从被交换的根节点向下验证，此时只有被交换的节点的子树受到影响
                           //经过建堆的过程，上面的结点不会受下面调整的影响了
     }
     return arr;
@@ -256,7 +278,7 @@ function buildMaxHeap(arr){            //建一个大顶堆，适合升序排序
         heapify(arr,i);     //依次对所有非叶子节点验证堆的性质，从倒数第一个开始向上进行
     }
 }
-function heapify(arr,i){
+function heapify(arr,i,len){
     let left = 2*i +1;
     let right = 2*i +2;
     let largest = i;

@@ -215,3 +215,10 @@ class Sleep {
     const actualTime = await new Sleep(95);
     console.log(actualTime);
 })();
+
+async function f1() {
+    await Promise.reject('1234567');
+    //async函数种一旦reject就会返回，不需要写return;而resolve状态的返回值，必须使用return来显示返回
+}
+
+f1().then(v => console.log(v)).catch(e => console.log(e));

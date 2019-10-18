@@ -264,3 +264,16 @@ for(let i=0; i<0; i++){//每次执行必须满足条件，包括第一次
 }
 console.log(testatt.reverse());
 console.log(testatt);
+
+let obj1 = 'rt';
+console.log(obj1.split(/rt/));
+
+let timeout = setTimeout(() => {
+    console.log(2);
+},1000);
+
+if(timeout) clearTimeout(timeout);
+
+if(timeout){
+    console.log(timeout);
+}
