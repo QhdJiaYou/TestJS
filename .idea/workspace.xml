@@ -34,47 +34,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/thousands.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/offerAlg.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="427" column="20" lean-forward="true" selection-start-line="427" selection-start-column="20" selection-end-line="427" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/Alg.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6288">
-              <caret line="262" column="19" selection-start-line="262" selection-start-column="19" selection-end-line="262" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/bishi.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -133,10 +93,6 @@
         <option value="$PROJECT_DIR$/public/nodeJS/first.js" />
         <option value="$PROJECT_DIR$/public/javascripts/tencent.js" />
         <option value="$PROJECT_DIR$/public/javascripts/ten.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
         <option value="$PROJECT_DIR$/public/javascripts/debounce.js" />
         <option value="$PROJECT_DIR$/public/javascripts/baidu.js" />
         <option value="$PROJECT_DIR$/public/javascripts/Genera.js" />
@@ -153,6 +109,10 @@
         <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
         <option value="$PROJECT_DIR$/public/javascripts/Alg.js" />
         <option value="$PROJECT_DIR$/public/javascripts/bishi.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/test.js" />
       </list>
     </option>
   </component>
@@ -208,18 +168,13 @@
               <item name="TestJS" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TestJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TestJS" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Course" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -250,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.bishi.js">
+  <component name="RunManager" selected="Node.js.test.js">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -273,9 +228,6 @@
     <configuration name="Alg.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Alg.js" working-dir="$PROJECT_DIR$/public/javascripts">
       <method v="2" />
     </configuration>
-    <configuration name="Genera.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Genera.js" working-dir="$PROJECT_DIR$/public/javascripts">
-      <method v="2" />
-    </configuration>
     <configuration name="arrAlg.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="arrAlg.js" working-dir="$PROJECT_DIR$/public/javascripts">
       <method v="2" />
     </configuration>
@@ -283,6 +235,9 @@
       <method v="2" />
     </configuration>
     <configuration name="offerAlg.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="offerAlg.js" working-dir="$PROJECT_DIR$/public/javascripts">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/public/javascripts">
       <method v="2" />
     </configuration>
     <configuration default="true" type="TestNG">
@@ -317,18 +272,18 @@
       <item itemvalue="Node.js.bin\www" />
       <item itemvalue="Node.js.offerAlg.js" />
       <item itemvalue="Node.js.arrAlg.js" />
-      <item itemvalue="Node.js.Genera.js" />
       <item itemvalue="Node.js.bishi.js" />
       <item itemvalue="Node.js.Alg.js" />
+      <item itemvalue="Node.js.test.js" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.bishi.js" />
         <item itemvalue="Node.js.Alg.js" />
         <item itemvalue="Node.js.offerAlg.js" />
         <item itemvalue="Node.js.arrAlg.js" />
-        <item itemvalue="Node.js.Genera.js" />
       </list>
     </recent_temporary>
   </component>
@@ -415,16 +370,21 @@
       <workItem from="1570782068873" duration="37000" />
       <workItem from="1571050371432" duration="4367000" />
       <workItem from="1571145597603" duration="707000" />
+      <workItem from="1571367865269" duration="631000" />
+      <workItem from="1571807203722" duration="1256000" />
+      <workItem from="1571821349731" duration="1480000" />
+      <workItem from="1572161325187" duration="222000" />
+      <workItem from="1573136294011" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="624389000" />
+    <option name="totallyTimeSpent" value="627987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5879121" visible="true" weight="0.15384616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5879121" visible="true" weight="0.20310391" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -432,15 +392,16 @@
       <window_info id="npm" order="5" sideWeight="0.41208792" side_tool="true" weight="0.14902808" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Image Layers" order="7" />
+      <window_info anchor="bottom" id="Educational.CheckDetails" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4952241" weight="0.31578946" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4952241" weight="0.31432748" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31118315" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5047759" side_tool="true" weight="0.3987034" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3306321" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2119883" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="TypeScript" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -610,13 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="274" column="34" selection-start-line="274" selection-start-column="34" selection-end-line="274" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/Genera.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
@@ -680,23 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/thousands.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/Alg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6288">
-          <caret line="262" column="19" selection-start-line="262" selection-start-column="19" selection-end-line="262" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/arrAlg.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -709,15 +646,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/bishi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="4800">
           <caret line="200" column="44" selection-start-line="200" selection-start-column="44" selection-end-line="200" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="282" column="19" selection-start-line="282" selection-start-column="19" selection-end-line="282" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/Alg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="243" column="15" selection-start-line="243" selection-start-column="15" selection-end-line="243" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/offerAlg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="427" column="20" lean-forward="true" selection-start-line="427" selection-start-column="20" selection-end-line="427" selection-end-column="20" />
+        <state relative-caret-position="578">
+          <caret line="432" column="37" selection-start-line="432" selection-start-column="37" selection-end-line="432" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/thousands.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

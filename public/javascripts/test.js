@@ -277,3 +277,10 @@ if(timeout) clearTimeout(timeout);
 if(timeout){
     console.log(timeout);
 }
+var quanju = 2;
+function f2() {
+    console.log(quanju); //undefined
+    var quanju = 4;
+}
+f2();
+console.log(quanju);
